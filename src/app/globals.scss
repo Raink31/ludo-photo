@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "arkhip";
+    src: url("../../public/fonts/Arkhip_font.ttf");
+}
+
+@font-face {
+    font-family: "Prociono";
+    src: url("../../public/fonts/LeagueSpartan-Bold.ttf");
+}
+
+body {
+    //background-image: linear-gradient(to right top, #060c16, #0d101e, #131325, #1b152b, #251630);
+    background-color: #fafafa;
+    color: #323232;
+    font-family: "Prociono", sans-serif;
+}
+
+header, h1 {
+    font-family: "arkhip", sans-serif;
+}
+
+.logo path:nth-child(1) {
+    fill: #323232;
+    transition: fill 1.3s;
+}
+
+.logo path:nth-child(2) {
+    fill: #fafafa;
+    transition: fill 1.3s;
+}
+
+.logoActive path:nth-child(1) {
+    fill: #fafafa;
+    transition: fill 1s ease;
+}
+
+.logoActive path:nth-child(2) {
+    fill: #323232;
+    transition: fill 1s ease;
+}
+
+.logoText {
+    transition: color 1s ease;
+    color: #323232;
+}
+
+.logoTextActive {
+    transition: color 1s ease;
+    color: #fafafa;
+}
+
+// Animation menu nav
+
+.button {
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger {
+    width: 100%;
+    &::after, &::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 40%;
+        margin: auto;
+        background-color: #323232;
+        position: relative;
+        transition: transform 0.3s, background-color 1s ease;
+    }
+
+    &::after {
+        top: -7px;
+    }
+
+    &::before {
+        top: 7px;
+    }
+}
+
+.burgerActive {
+    &::after {
+        transform: rotate(45deg);
+        top: 1px;
+        background-color: #fafafa;
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+        top: 3px;
+        background-color: #fafafa;
+    }
+}
+
+.menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: #fafafa;
+    z-index: 1;
+
+    .menuBody {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5rem;
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            font-size: 3.2em;
+            gap: 20px;
+            margin-top: 80px;
+        }
+
+        .navHeader {
+            color: rgb(153, 153, 153);
+            border-bottom: 1px solid rgb(153, 153, 153);
+            text-transform: uppercase;
+            font-size: 11px;
+            margin-bottom: 40px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fafafa;
+            font-weight: 300;
+        }
+    }
+}
+
+.navFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: .9em;
+}
+
+.link {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: #fafafa;
+        border-radius: 50%;
+        position: absolute;
+        left: -30px;
+    }
+}
+
+.svgCurve {
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    fill: #101010;
+    stroke: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .link {
+        .indicator {
+            background-color: #323232;
+        }
+    }
+
+    .menuBody {
+        .nav {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.4em;
+            gap: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .menuBody {
+        .nav {
+            font-size: 1.5em;
+            gap: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1536px) {
+
+    .menuBody {
+        .nav {
+            font-size: 1.8em;
+            gap: 5rem;
+        }
+    }
+}
+
+.clampSize {
+    width: 350px;
+}
+
+@media screen and (min-width: 630px) {
+    .clampSize {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .clampSize {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .clampSize {
+        width: 650px;
+    }
+}
+
+.clampSizePort {
+    width: 350px;
+}
+
+@media screen and (min-width: 630px) {
+    .clampSizePort {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .clampSizePort {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .clampSizePort {
+        width: 420px;
+    }
+}
+
+
+
+
+
