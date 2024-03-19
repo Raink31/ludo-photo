@@ -39,7 +39,7 @@ export default function Home() {
                                    className={"border border-[#808080] rounded-md py-2 px-4"}/>
                         </div>
                     </div>
-                    <div className={"flex lg:flex-row lg:items-start lg:gap-8"}>
+                    <div className={"flex flex-col lg:items-start gap-8"}>
                         <div className={"flex flex-col items-start justify-center gap-8 w-[270px]"}>
                             <div className={"flex flex-col items-start justify-center gap-2 w-[270px]"}>
                                 <label htmlFor={"prestation"}>Type de prestation :</label>
@@ -80,7 +80,7 @@ export default function Home() {
                         </div>
                         <div className={"flex flex-col items-start justify-center gap-2"}>
                             <label htmlFor={"date"}>Date de la prestation :</label>
-                            <input type={"text"} id={"date"} name={"date"} placeholder={"Date de votre prestation*"}
+                            <input type={"date"} id={"date"} name={"date"} placeholder={"Date de votre prestation*"}
                                    required className={"border border-[#808080] rounded-md py-2 px-4"}/>
                         </div>
                     </div>
