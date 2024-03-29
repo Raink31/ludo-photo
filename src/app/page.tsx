@@ -17,8 +17,14 @@ export default function Home() {
 
     return (
         <main className={`px-8 py-8 relative flex flex-col h-max 2xl:px-40`}>
-            <Header />
+            <Header/>
             <Character value={paragraph}/>
+            <section className="flex justify-center my-6 text-2xl">
+                <button
+                    className="h-12 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
+                    <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
+                </button>
+            </section>
             <section className="flex flex-col items-center gap-10 my-10">
                 <h2 className="text-center text-3xl 2xl:text-4xl">Prestation Mariage :</h2>
                 <div className={"flex gap-10 flex-row flex-wrap justify-center"}>
@@ -27,7 +33,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                     <Image
@@ -35,7 +41,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                     <Image
@@ -43,7 +49,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                     <Image
@@ -51,7 +57,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                     <Image
@@ -59,7 +65,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                     <Image
@@ -67,7 +73,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSize 2xl:shadow-none"
+                        className="rounded-2xl clampSizeHomeMariage"
                         priority
                     />
                 </div>
@@ -80,7 +86,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                     <Image
@@ -88,7 +94,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                     <Image
@@ -96,7 +102,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                     <Image
@@ -104,7 +110,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                     <Image
@@ -112,7 +118,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                     <Image
@@ -120,15 +126,15 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 clampSizePort 2xl:shadow-none"
+                        className="rounded-2xl clampSizePort"
                         priority
                     />
                 </div>
             </section>
             <section className="flex justify-center mb-10 text-2xl">
                 <button
-                    className="h-12 justify-center rounded-md bg-[#323232] px-6 transition hover:scale-110">
-                    <span className="text-[#FAFAFA]"><Link href="/contact">Contactez moi</Link></span>
+                    className="h-12 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
+                    <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
                 </button>
             </section>
             <footer className="pb-2 text-lg flex flex-col items-center">
@@ -141,7 +147,8 @@ export default function Home() {
                             height={35}
                         />
                     </a>
-                    <a href="https://www.instagram.com/ludovicfieret.photography/?igsh=YnFxNTltM3M0bGJm" target="_blank">
+                    <a href="https://www.instagram.com/ludovicfieret.photography/?igsh=YnFxNTltM3M0bGJm"
+                       target="_blank">
                         <Image
                             src={instagram}
                             alt="Instagram link"

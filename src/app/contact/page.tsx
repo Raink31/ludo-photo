@@ -39,24 +39,33 @@ export default function Home() {
                                    className={"border border-[#808080] rounded-md py-2 px-4"}/>
                         </div>
                     </div>
-                    <div className={"flex flex-col lg:items-start gap-8"}>
-                        <div className={"flex flex-col items-start justify-center gap-8 w-[270px]"}>
+                    <div className={"flex flex-col lg:flex-row lg:items-start gap-8"}>
+                        <div className={"flex flex-col items-start justify-center gap-8"}>
                             <div className={"flex flex-col items-start justify-center gap-2 w-[270px]"}>
                                 <label htmlFor={"prestation"}>Type de prestation :</label>
-                                <div id={"prestation"} className={"flex items-center gap-8 w-full"}>
+                                <div id={"prestation"} className={"flex flex-wrap items-center gap-8 w-full"}>
                                     <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Mariage"} name={"prestation souhaitée"} id={"mariage"} required
+                                        <input type={"radio"} value={"Mariage"} name={"prestation souhaitée"}
+                                               id={"mariage"} required
                                                onClick={toggleMariage}/>
                                         <label htmlFor={"mariage"}>Mariage</label>
                                     </div>
                                     <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Portrait"} name={"prestation souhaitée"} id={"portrait"} required
+                                        <input type={"radio"} value={"Portrait"} name={"prestation souhaitée"}
+                                               id={"portrait"} required
                                                onClick={turnOffMariage}/>
                                         <label htmlFor={"portrait"}>Portrait</label>
                                     </div>
+                                    <div className={"flex gap-3"}>
+                                        <input type={"radio"} value={"Autre"} name={"prestation souhaitée"}
+                                               id={"autre"} required
+                                               onClick={turnOffMariage}/>
+                                        <label htmlFor={"portrait"}>Autre</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div className={`flex flex-col items-start justify-center gap-2 w-[270px] ${mariageActive ? "block" : "hidden"}`}>
+                            <div
+                                className={`flex flex-col items-start justify-center gap-2 w-[270px] ${mariageActive ? "block" : "hidden"}`}>
                                 <label htmlFor={"prestation"}>Type de cérémonie :</label>
                                 <div id={"prestation"} className={"flex items-center gap-x-8 gap-y-5 w-full flex-wrap"}>
                                     <div className={"flex gap-3"}>
@@ -78,7 +87,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"flex flex-col items-start justify-center gap-2"}>
+                        <div className={"flex flex-col items-start justify-center gap-2 w-[270px]"}>
                             <label htmlFor={"date"}>Date de la prestation :</label>
                             <input type={"date"} id={"date"} name={"date"} placeholder={"Date de votre prestation*"}
                                    required className={"border border-[#808080] rounded-md py-2 px-4"}/>
@@ -95,6 +104,7 @@ export default function Home() {
                             <select name={"service"} id={"service"}
                                     className={"border border-[#808080] rounded-md py-3 px-4"}>
                                 <option value={"Reportage photo"} selected>Reportage photo</option>
+                                <option value={"Reportage vidéo"}>Reportage vidéo</option>
                                 <option value={"Reportage photo & vidéo"}>Reportage photo & vidéo</option>
                             </select>
                         </div>
@@ -112,7 +122,7 @@ export default function Home() {
                                       placeholder={"Message* (Précisez : heure de début et de fin de la prestation, nombre d'invités et thème si mariage, etc.)"}></textarea>
                         </div>
                     </div>
-                    <button type={"submit"} className="h-12 text-[#fafafa] justify-center rounded-md bg-[#323232] px-6 transition hover:scale-110">
+                    <button type={"submit"} className="h-12 text-[#EEE0D3] justify-center rounded-md bg-[#E65F5C] px-6 transition hover:scale-110">
                         Envoyer
                     </button>
                 </form>

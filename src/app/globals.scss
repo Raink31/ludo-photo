@@ -14,8 +14,8 @@
 
 body {
     //background-image: linear-gradient(to right top, #060c16, #0d101e, #131325, #1b152b, #251630);
-    background-color: #fafafa;
-    color: #323232;
+    background-color: #eee0d3;
+    color: #302f4d;
     font-family: "Prociono", sans-serif;
 }
 
@@ -24,33 +24,33 @@ header, h1 {
 }
 
 .logo path:nth-child(1) {
-    fill: #323232;
+    fill: #302F4D;
     transition: fill 1.3s;
 }
 
 .logo path:nth-child(2) {
-    fill: #fafafa;
+    fill: #EEE0D3;
     transition: fill 1.3s;
 }
 
 .logoActive path:nth-child(1) {
-    fill: #fafafa;
+    fill: #eee0d3;
     transition: fill 1s ease;
 }
 
 .logoActive path:nth-child(2) {
-    fill: #323232;
+    fill: #302F4D;
     transition: fill 1s ease;
 }
 
 .logoText {
     transition: color 1s ease;
-    color: #323232;
+    color: #302F4D;
 }
 
 .logoTextActive {
     transition: color 1s ease;
-    color: #fafafa;
+    color: #eee0d3;
 }
 
 // Animation menu nav
@@ -74,7 +74,7 @@ header, h1 {
         height: 3px;
         width: 40%;
         margin: auto;
-        background-color: #323232;
+        background-color: #302F4D;
         position: relative;
         transition: transform 0.3s, background-color 1s ease;
     }
@@ -92,24 +92,24 @@ header, h1 {
     &::after {
         transform: rotate(45deg);
         top: 1px;
-        background-color: #fafafa;
+        background-color: #eee0d3;
     }
 
     &::before {
         transform: rotate(-45deg);
         top: 3px;
-        background-color: #fafafa;
+        background-color: #eee0d3;
     }
 }
 
 .menu {
     height: 100vh;
     width: 100vw;
-    background-color: #323232;
+    background-color: #302F4D;
     position: fixed;
     right: 0;
     top: 0;
-    color: #fafafa;
+    color: #eee0d3;
     z-index: 1;
 
     .menuBody {
@@ -139,7 +139,7 @@ header, h1 {
 
         .nav a {
             text-decoration: none;
-            color: #fafafa;
+            color: #eee0d3;
             font-weight: 300;
         }
     }
@@ -161,7 +161,7 @@ header, h1 {
     .indicator {
         width: 10px;
         height: 10px;
-        background-color: #fafafa;
+        background-color: #eee0d3;
         border-radius: 50%;
         position: absolute;
         left: -30px;
@@ -174,7 +174,7 @@ header, h1 {
     left: -99px;
     width: 100px;
     height: 100%;
-    fill: #323232;
+    fill: #302F4D;
     stroke: none;
 }
 
@@ -182,7 +182,7 @@ header, h1 {
 
     .link {
         .indicator {
-            background-color: #323232;
+            background-color: #302F4D;
         }
     }
 
@@ -219,6 +219,9 @@ header, h1 {
 .clampSize {
     width: 350px;
 }
+.clampSizeHomeMariage{
+    width: 360px;
+}
 
 @media screen and (min-width: 630px) {
     .clampSize {
@@ -239,25 +242,7 @@ header, h1 {
 }
 
 .clampSizePort {
-    width: 350px;
-}
-
-@media screen and (min-width: 630px) {
-    .clampSizePort {
-        width: 400px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .clampSizePort {
-        width: 350px;
-    }
-}
-
-@media screen and (min-width: 1536px) {
-    .clampSizePort {
-        width: 420px;
-    }
+    width: 360px;
 }
 
 

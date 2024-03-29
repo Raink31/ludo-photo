@@ -72,7 +72,6 @@ export default function Index() {
                     <p>ludovicfieret.photography@gmail.com</p>
                 </div>
             </div>
-            <Curve/>
         </motion.div>
     )
 }

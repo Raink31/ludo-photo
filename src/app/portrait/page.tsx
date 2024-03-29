@@ -23,7 +23,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                     <Image
@@ -31,7 +31,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                     <Image
@@ -39,7 +39,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                     <Image
@@ -47,7 +47,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                     <Image
@@ -55,7 +55,7 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                     <Image
@@ -63,15 +63,15 @@ export default function Home() {
                         alt="mariage1"
                         width={350}
                         height={200}
-                        className="rounded-2xl shadow-md shadow-slate-950 lg:w-[500px] lg:shadow-none"
+                        className="rounded-2xl lg:w-[500px]"
                         priority
                     />
                 </div>
             </section>
             <section className="flex justify-center mb-10 text-2xl">
                 <button
-                    className="h-12 justify-center rounded-md bg-[#323232] px-6 transition hover:scale-110 lg:px-8 lg:h-16">
-                    <span className="text-[#FAFAFA]"><Link href="/contact">Contactez moi</Link></span>
+                    className="h-12 justify-center rounded-md bg-[#E65F5C] px-6 transition hover:scale-110 lg:px-8 lg:h-16">
+                    <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
                 </button>
             </section>
             <footer className="pb-2 text-lg flex flex-col items-center">
