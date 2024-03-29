@@ -14,7 +14,9 @@
 
 body {
     //background-image: linear-gradient(to right top, #060c16, #0d101e, #131325, #1b152b, #251630);
-    background-color: #eee0d3;
+    background-image: url("../../public/jon-tyson-GpiqJ8Po2g0-unsplash 1.png");
+    background-color: #EEE0D3;
+    background-blend-mode: darken;
     color: #302f4d;
     font-family: "Prociono", sans-serif;
 }
@@ -176,6 +178,10 @@ header, h1 {
     height: 100%;
     fill: #302F4D;
     stroke: none;
+}
+
+input, textarea, select {
+    background: #f6f1ef;
 }
 
 @media screen and (min-width: 1024px) {
