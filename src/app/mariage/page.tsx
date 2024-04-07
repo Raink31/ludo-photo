@@ -14,9 +14,9 @@ export default function Home() {
     return (
         <main className={`px-8 py-8 relative h-max 2xl:px-40`}>
             <Header/>
-            <h1 className="text-center text-3xl my-12 2xl:text-4xl">Prestation Mariage</h1>
-            <section className="flex flex-col items-center gap-10 my-10">
-                <p className={"text-center text-xl leading-10 2xl:text-3xl 2xl:leading-normal 2xl:opacity-60"}>{"J'accorde une grande importance à l’émotion et à la spontanéité pour chacune de mes photographies. Mon but n’est pas seulement de créer de simples supports visuels, mais de capter vos sentiments pour vous permettre de vous remémorer chaque détail de ce jour qui marque l’une des étapes les plus importantes de votre vie."}</p>
+            <h1 className="text-center text-3xl my-12">Prestation Mariage</h1>
+            <section className="text-center text-3xl my-12">
+                <p className={"text-center text-2xl mb-20 leading-10 2xl:leading-normal 2xl:opacity-60"}>{"J'accorde une grande importance à l’émotion et à la spontanéité pour chacune de mes photographies. Mon but n’est pas seulement de créer de simples supports visuels, mais de capter vos sentiments pour vous permettre de vous remémorer chaque détail de ce jour qui marque l’une des étapes les plus importantes de votre vie."}</p>
                 <div className={"flex flex-col gap-10 lg:flex-row flex-wrap justify-center"}>
                     <Image
                         src={placeholderMariage}
@@ -70,7 +70,7 @@ export default function Home() {
             </section>
             <section className="flex justify-center mb-10 text-2xl">
                 <button
-                    className="h-12 justify-center rounded-md bg-[#E65F5C] px-6 transition hover:scale-110 2xl:px-8 2xl:h-16">
+                    className="h-14 justify-center rounded-md bg-[#E65F5C] px-6 transition hover:scale-110 2xl:px-8">
                     <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
                 </button>
             </section>

@@ -21,12 +21,12 @@ export default function Home() {
             <Character value={paragraph}/>
             <section className="flex justify-center my-6 text-2xl">
                 <button
-                    className="h-12 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
+                    className="h-14 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
                     <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
                 </button>
             </section>
-            <section className="flex flex-col items-center gap-10 my-10">
-                <h2 className="text-center text-3xl 2xl:text-4xl">Prestation Mariage :</h2>
+            <section className="flex flex-col items-center gap-10 mb-10 mt-20">
+                <h2 className="text-center text-2xl">Prestation Mariage :</h2>
                 <div className={"flex gap-10 flex-row flex-wrap justify-center"}>
                     <Image
                         src={placeholderMariage}
@@ -78,8 +78,8 @@ export default function Home() {
                     />
                 </div>
             </section>
-            <section className="flex flex-col gap-10 my-10 items-center">
-                <h2 className="text-center text-3xl 2xl:text-4xl">Prestation Portrait :</h2>
+            <section className="flex flex-col gap-10 mt-10 mb-20 items-center">
+                <h2 className="text-center text-2xl">Prestation Portrait :</h2>
                 <div className={"flex gap-10 flex-row flex-wrap justify-center"}>
                     <Image
                         src={placeholderPortrait}
@@ -133,7 +133,7 @@ export default function Home() {
             </section>
             <section className="flex justify-center mb-10 text-2xl">
                 <button
-                    className="h-12 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
+                    className="h-14 justify-center rounded-md bg-[#e65f5c] px-6 transition hover:scale-110">
                     <span className="text-[#EEE0D3]"><Link href="/contact">Contactez moi</Link></span>
                 </button>
             </section>

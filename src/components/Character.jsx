@@ -21,7 +21,7 @@ export default function Paragraph({value}) {
     return (
         <h1
             // Styling of the paragraph
-            className="text-3xl text-center flex flex-wrap justify-center leading-[30px] pt-10 pb-6 lg:text-4xl "
+            className="text-3xl text-center flex flex-wrap justify-center leading-[30px] pt-10 pb-6 lg:text-3xl tracking-[-2px]"
             ref={element}
         >
             {

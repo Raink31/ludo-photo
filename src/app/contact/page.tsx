@@ -25,72 +25,33 @@ export default function Home() {
             <Header />
             <h1 className="text-center text-3xl my-12 lg:text-4xl">Contact</h1>
             <section className={"my-12"}>
-                <form className={"flex flex-col items-center gap-8 text-xl"} action={"https://api.web3forms.com/submit"} method={"POST"}>
+                <form className={"flex flex-col items-center gap-8 text-xl tracking-tighter"} action={"https://api.web3forms.com/submit"} method={"POST"}>
                     <input type={"hidden"} name={"access_key"} value={"4e83dc0d-1e30-4e6c-aa3a-470f25eb00a0"} />
                     <div className={"flex flex-col items-center justify-center gap-8 lg:flex-row"}>
                         <div className={"flex flex-col items-start justify-center gap-2"}>
-                            <label htmlFor={"name"}>Votre nom & prénom :</label>
+                            <label htmlFor={"name"}>Nom & prénom :</label>
                             <input type={"text"} id={"name"} name={"Nom du client"} placeholder={"Nom & prénom*"}
                                    className={"border border-[#808080] rounded-md py-2 px-4"} required/>
                         </div>
                         <div className={"flex flex-col items-start justify-center gap-2"}>
-                            <label htmlFor={"phone"}>Votre téléphone :</label>
+                            <label htmlFor={"phone"}>Téléphone :</label>
                             <input type={"tel"} id={"phone"} name={"Téléphone"} placeholder={"Téléphone"}
                                    className={"border border-[#808080] rounded-md py-2 px-4"}/>
                         </div>
                     </div>
-                    <div className={"flex flex-col lg:flex-row lg:items-start gap-8"}>
-                        <div className={"flex flex-col items-start justify-center gap-8"}>
-                            <div className={"flex flex-col items-start justify-center gap-2 w-[270px]"}>
-                                <label htmlFor={"prestation"}>Type de prestation :</label>
-                                <div id={"prestation"} className={"flex flex-wrap items-center gap-8 w-full"}>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Mariage"} name={"prestation souhaitée"}
-                                               id={"mariage"} required
-                                               onClick={toggleMariage}/>
-                                        <label htmlFor={"mariage"}>Mariage</label>
-                                    </div>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Portrait"} name={"prestation souhaitée"}
-                                               id={"portrait"} required
-                                               onClick={turnOffMariage}/>
-                                        <label htmlFor={"portrait"}>Portrait</label>
-                                    </div>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Autre"} name={"prestation souhaitée"}
-                                               id={"autre"} required
-                                               onClick={turnOffMariage}/>
-                                        <label htmlFor={"portrait"}>Autre</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className={`flex flex-col items-start justify-center gap-2 w-[270px] ${mariageActive ? "block" : "hidden"}`}>
-                                <label htmlFor={"prestation"}>Type de cérémonie :</label>
-                                <div id={"prestation"} className={"flex items-center gap-x-8 gap-y-5 w-full flex-wrap"}>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Civile"} name={"Cérémonie"} id={"civile"}/>
-                                        <label htmlFor={"civile"}>Civile</label>
-                                    </div>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Religieuse"} name={"Cérémonie"} id={"religieuse"}/>
-                                        <label htmlFor={"religieuse"}>Religieuse</label>
-                                    </div>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Laïque"} name={"Cérémonie"} id={"laïque"}/>
-                                        <label htmlFor={"laïque"}>Laïque</label>
-                                    </div>
-                                    <div className={"flex gap-3"}>
-                                        <input type={"radio"} value={"Autre"} name={"Cérémonie"} id={"autre"}/>
-                                        <label htmlFor={"autre"}>Autre</label>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className={"flex flex-row items-start justify-start gap-8 w-[860px]"}>
+                        <div className={"flex flex-col items-start justify-center gap-2"}>
+                            <label htmlFor={"prestation"}>Type de prestation :</label>
+                            <select name={"prestation"} id={"prestation"} className={"border border-[#808080] rounded-md py-3 px-4 w-[415px]"}>
+                                <option value={"mariage"} selected>Mariage</option>
+                                <option value={"portrait"}>Portrait</option>
+                                <option value={"autre"}>Autre</option>
+                            </select>
                         </div>
-                        <div className={"flex flex-col items-start justify-center gap-2 w-[270px]"}>
+                        <div className={"flex flex-col items-start justify-center gap-2"}>
                             <label htmlFor={"date"}>Date de la prestation :</label>
                             <input type={"date"} id={"date"} name={"date"} placeholder={"Date de votre prestation*"}
-                                   required className={"border border-[#808080] rounded-md py-2 px-4"}/>
+                                   required className={"border border-[#808080] rounded-md py-2 px-4 w-[374px]"}/>
                         </div>
                     </div>
                     <div className={"flex flex-col gap-8 lg:flex-row"}>

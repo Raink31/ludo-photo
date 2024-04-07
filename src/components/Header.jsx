@@ -63,10 +63,9 @@ export default function Index() {
     };
 
     return (
-        <header className="flex items-center justify-between gap-2.5">
-            <div className="flex items-center justify-center gap-2.5 z-20">
+        <header className="flex items-center justify-between">
+            <div className="flex items-center justify-center z-20">
                 <Logo className={isActive ? "logoActive" : "logo"} />
-                <p className={`text-lg ${isActive ? "logoTextActive" : "logoText"}`}>PHOTOGRAPHY</p>
             </div>
             <div onClick={toggleActive} className={`button ${isActive}`}>
                 <div className={`burger ${isActive ? "burgerActive" : ""} lg:hidden`}></div>

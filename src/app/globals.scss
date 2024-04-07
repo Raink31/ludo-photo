@@ -12,17 +12,38 @@
     src: url("../../public/fonts/LeagueSpartan-Bold.ttf");
 }
 
+@font-face {
+    font-family: "handlee";
+    src: url("../../public/fonts/Handlee-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Delius";
+    src: url("../../public/fonts/Delius-Regular.ttf");
+}
+
+@font-face {
+    font-family: "gruppo";
+    src: url("../../public/fonts/Gruppo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lexend";
+    src: url("../../public/fonts/LexendPeta-VariableFont_wght.ttf");
+}
+
+
 body {
     //background-image: linear-gradient(to right top, #060c16, #0d101e, #131325, #1b152b, #251630);
     background-image: url("../../public/jon-tyson-GpiqJ8Po2g0-unsplash 1.png");
     background-color: #EEE0D3;
     background-blend-mode: darken;
     color: #302f4d;
-    font-family: "Prociono", sans-serif;
+    font-family: "lexend", sans-serif;
 }
 
 header, h1 {
-    font-family: "arkhip", sans-serif;
+    font-family: "lexend", sans-serif;
 }
 
 .logo path:nth-child(1) {
@@ -161,12 +182,12 @@ header, h1 {
     align-items: center;
 
     .indicator {
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
         background-color: #eee0d3;
         border-radius: 50%;
         position: absolute;
-        left: -30px;
+        left: -20px;
     }
 }
 
@@ -216,7 +237,7 @@ input, textarea, select {
 
     .menuBody {
         .nav {
-            font-size: 1.8em;
+            font-size: 1.6em;
             gap: 5rem;
         }
     }
